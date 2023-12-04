@@ -61,7 +61,7 @@ Running the API within a container in something like Azure Container Apps would 
 
  
 
-Azure functions could be used in place of something like a container app, although maintaining a lot of apps also has a downside in respect to maintenance. 
+Azure functions could be used in place of something like a container app, splitting out the functionality into Azure Functions within the app, which could allow for better scaling although there are drawbacks such as the potential for cold starts. 
 
  
 
