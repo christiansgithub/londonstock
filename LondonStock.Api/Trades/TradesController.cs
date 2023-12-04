@@ -1,6 +1,5 @@
 using LondonStock.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace LondonStock.Api.Trades;
 

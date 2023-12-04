@@ -53,7 +53,7 @@ public class StocksTests : IClassFixture<WebApplicationFactoryWithInMemoryDb>
         response.StatusCode.Should().Be(HttpStatusCode.OK);
     }
 
-    // Assumption that ticker ids should to case insensitive, but requirement would need clarifying
+    // Assumption that ticker ids should be case insensitive, but requirements would need clarifying
     [Fact]
     public async Task GetTrade_WithStockTickerThatIsMixedCase_ShouldReturn()
     {
@@ -71,7 +71,7 @@ public class StocksTests : IClassFixture<WebApplicationFactoryWithInMemoryDb>
         response.StatusCode.Should().Be(HttpStatusCode.OK);
     }
 
-    // Requirements assumption is that the current stock price is the most recently received trade price
+    // Assumption is that the current stock price is the most recently received trade price, but again requirements would need clarifying
     [Fact]
     public async Task GetTrade_WithStockTickerThatExistsWithMultipleTrades_ShouldReturnMostRecentInformation()
     {
