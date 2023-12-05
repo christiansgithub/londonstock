@@ -43,6 +43,7 @@ public class StocksController : ControllerBase
         });
     }
 
+    // The tickers query parameter is a comma separated list of ticker symbols e.g. ?tickers=AA,BB
     [HttpGet("search", Name = "SearchStocks")]
     public async Task<IActionResult> SearchStocks([FromQuery] string tickers)
     {
